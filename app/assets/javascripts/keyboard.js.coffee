@@ -60,7 +60,7 @@ class feedbin.Keyboard
       
       if 'down' == combo || 'j' == combo
         if 'entry-content' == @selectedColumnName()
-          @scrollContent(30, 'down')
+          @selectNextUnreadEntry()
         else
           @item = @next
           @selectItem()
